@@ -1,0 +1,6 @@
+git clone https://github.com/CarlosBerenguer/banco-web-tests.git
+- npm init -y
+- npm install --save-dev cypress@14.5.2
+
+Abrir o cypress
+- npx cypress open
