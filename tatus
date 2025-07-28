@@ -1,0 +1,35 @@
+[33mcommit 17313e9ff1e2ab8630feaf1b2e4f3390749113f2[m[33m ([m[1;36mHEAD -> [m[1;32madicionand-beforeeach-no-login[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 13c785f 4ba6a16
+Author: CarlosBerenguer <carloshfb03@gmail.com>
+Date:   Wed Jul 23 16:26:25 2025 -0300
+
+    Merge pull request #2 from CarlosBerenguer/adicionando-novo-teste-login-falho
+    
+    adicinei um teste para validar o login invalido
+
+[33mcommit 4ba6a16377e358cdd5a982ea36bfbc373f183e92[m[33m ([m[1;31morigin/adicionando-novo-teste-login-falho[m[33m, [m[1;32madicionando-novo-teste-login-falho[m[33m)[m
+Author: CarlosBerenguer <carloshfb03@gmail.com>
+Date:   Wed Jul 23 16:25:52 2025 -0300
+
+    adicinei um teste para validar o login invalido
+
+[33mcommit 13c785f214558c296395bdd4e23bd71f58ec8dfe[m
+Merge: 91370e0 41338ab
+Author: CarlosBerenguer <carloshfb03@gmail.com>
+Date:   Wed Jul 23 16:11:33 2025 -0300
+
+    Merge pull request #1 from CarlosBerenguer/projeto-inicial
+    
+    adicionei o primeiro teste de login
+
+[33mcommit 41338abf58391d56f1d9eedcc8b73e3b578f3b75[m[33m ([m[1;31morigin/projeto-inicial[m[33m, [m[1;32mprojeto-inicial[m[33m)[m
+Author: CarlosBerenguer <carloshfb03@gmail.com>
+Date:   Wed Jul 23 16:09:41 2025 -0300
+
+    adicionei o primeiro teste de login
+
+[33mcommit 91370e0c4fcca433382b55a64ffa3de5a0bf4892[m
+Author: CarlosBerenguer <carloshfb03@gmail.com>
+Date:   Wed Jul 23 14:02:47 2025 -0300
+
+    Initial commit
