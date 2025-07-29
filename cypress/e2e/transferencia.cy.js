@@ -1,20 +1,20 @@
 describe('Transferencias', () => {
     beforeEach(() => {
         cy.visit('/')
-        cy.fixture('credenciais').then(credenciais => {
-            cy.get('#username').click().type(credenciais.valida.usuario)
-            cy.get('#senha').click().type(credenciais.valida.senha)
-        })
-
-        cy.contains('button', 'Entrar').click()
+        cy.fazerLoginComCredenciaisValidas()
     })
     it('Deve transferir quando informo dados e valores validos', () => {
-        cy.get('label[for="conta-origem"]').parent().as('campo-conta-origem')
-        cy.get('label[for="conta-destino"]').parent().as('campo-conta-destino')
-        cy.get('@campo-conta-origem').click().contains('Maria Oliveira com saldo de R$').click()
-        cy.get('@campo-conta-destino').click().contains('Carlos Berenguer com saldo de R$').click()
-        cy.get('#valor').click().type('11')
-        cy.contains('button','Transferir').click()
-        cy.contains('div', "Transferência realizada!").should('be.visible')
+        //act
+        cy.realizarTransferencia("Maria Oliveira", "Carlos Berenguer", 11)
+                
+        //assert
+        cy.verificarMensagemNoToast("Transferência realizada!")
+    })
+    it('Deve mostrar erro quando realizar transferencias com valor maior que 5000,00 sem token', () => {
+        //act
+        cy.realizarTransferencia("Maria Oliveira", "Carlos Berenguer", 5000.01)
+        
+        //assert
+        cy.verificarMensagemNoToast("Saldo insuficiente para realizar a transferência.")
     })
 })
